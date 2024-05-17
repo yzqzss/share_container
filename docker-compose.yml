@@ -1,0 +1,15 @@
+version: '3.9'
+
+services:
+  share_container:
+    image: share_container
+    restart: unless-stopped
+    container_name: "share_container"
+    ports:
+        - "22566:22"
+        - "22570-22580:22570-22580" # Share ports
+    hostname: "share_container"
+    mem_limit: 8G
+    volumes:
+        - ./host-keys:/host-keys/
+        - ./data:/data/

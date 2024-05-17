@@ -1,0 +1,12 @@
+====================
+- 系统是 alpine
+- 已给 sudoer 权限
+- us-la-6362 内存限制 8G，hz1 内存限制 30G
+- CPU 给满
+- 硬盘用的 btrfs，不要把硬盘用满了，RO 之后有点难修
+- 仅 ~/data 中的文件会被持久化
+- 预装 zstd rsync htop wget curl nano vim zip tmux python3 py-pip
+====================
+22570-22580 端口开放
+====================
+
